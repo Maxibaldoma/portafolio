@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MOOCs - Análisis con Python y Power BI | Maximiliano Baldomá</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="../../styles.css"/>
+</head>
+
+<body>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-gradient-custom shadow-sm">
+  <div class="container">
+    <a class="navbar-brand" href="../../index.html">MB</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#proceso">EDA</a></li>
+        <li class="nav-item"><a class="nav-link" href="#dashboard">Dashboard</a></li>
+        <li class="nav-item"><a class="nav-link" href="#insights">Insights</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Header -->
+<header class="py-5 text-white" style="background: linear-gradient(135deg, #17324e, #5d685f);">
+  <div class="container text-center">
+    <h1 class="display-4">Análisis de Plataformas MOOCs</h1>
+    <p class="lead">Visualización en Power BI · Limpieza y análisis con Python</p>
+  </div>
+</header>
+
+<!-- Contenido -->
+<div class="container my-5">
+
+  <!-- Proyecto -->
+  <section class="mb-5">
+    <h2 class="section-title"><i class="bi bi-journal-text me-2"></i>Sobre el Proyecto</h2>
+    <p class="lead">
+      Este proyecto analiza datos de plataformas de educación online (MOOCs), destacando Udemy por volumen de información. 
+      El análisis exploratorio de datos (EDA) se desarrolló en Python y la visualización final en Power BI presenta métricas clave sobre usuarios, niveles de dificultad, categorías populares y evolución temporal.
+    </p>
+  </section>
+
+  <!-- Dashboard -->
+  <section id="dashboard" class="mb-5">
+    <h2 class="section-title"><i class="bi bi-bar-chart-line me-2"></i>Dashboard</h2>
+    <div class="text-center mb-4">
+      <img src="img/udemy.png" class="img-fluid rounded shadow" alt="Dashboard Power BI sobre MOOCs">
+      <p class="mt-2"><small>Vista del dashboard interactivo construido en Power BI</small></p>
+    </div>
+  </section>
+
+  <!-- Insights -->
+  <section id="proceso" class="mb-5">
+    <h2 class="section-title"><i class="bi bi-search me-2"></i>Principales Hallazgos</h2>
+    <div class="card shadow-sm mb-3">
+      <div class="card-body">
+        <h5 class="text-primary"><i class="bi bi-bullseye me-2"></i> Objetivos</h5>
+        <ul class="list-unstyled">
+          <li><i class="bi bi-check2-circle text-primary me-2"></i><strong>Conversión:</strong> usuarios que pasan de cursos gratuitos a pagos.</li>
+          <li><i class="bi bi-graph-up-arrow text-success me-2"></i><strong>Meta:</strong> crecimiento anual del 15% en conversiones.</li>
+          <li><i class="bi bi-calendar-check text-info me-2"></i><strong>Período:</strong> 2011 a 2017.</li>
+        </ul>
+        <div class="alert alert-info mt-3">
+          <i class="bi bi-lightbulb-fill me-2"></i>
+          <strong>Insight clave:</strong> En 2014 y 2015 se superó la meta anual. Otros años no alcanzaron el objetivo.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDA -->
+  <section id="insights" class="mb-5">
+    <h2 class="section-title"><i class="bi bi-gear-fill me-2"></i>Análisis Exploratorio con Python</h2>
+    <div class="mb-4 text-end">
+      <a href="https://github.com/Maxibaldoma/Proyecto-Moocs/" target="_blank" class="btn btn-outline-dark">
+        <i class="bi bi-github me-1"></i> Ver código en GitHub
+      </a>
+    </div>
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5><i class="bi bi-graph-up"></i> Métricas Clave</h5>
+            <ul>
+              <li><strong>Coursera:</strong> alto promedio de rating; cursos intensivos y bien valorados por los estudiantes.</li>
+              <li><strong>edX:</strong> buena relación precio-certificado; enfoque académico con cursos de universidades reconocidas.</li>
+              <li><strong>Udemy:</strong> accesibilidad priorizada; muchos cursos económicos y gran número de suscriptores.</li>
+              <li><strong>Idioma:</strong> 68% de los cursos están dictados en inglés.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5><i class="bi bi-lightbulb"></i> Recomendaciones</h5>
+            <ul>
+              <li>Potenciar categorías en expansión</li>
+              <li>Adaptar precios por región</li>
+              <li>Promocionar bundles temáticos</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5><i class="bi bi-gear"></i> Limpieza y Transformación</h5>
+            <ul>
+              <li>Procesamiento con <strong>Pandas</strong></li>
+              <li>Detección y tratamiento de valores atípicos</li>
+              <li>Análisis de distribución y correlaciones</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stack -->
+  <section id="tecnologias" class="mb-5">
+    <h2 class="section-title"><i class="bi bi-tools me-2"></i>Tecnologías Utilizadas</h2>
+    <div class="row">
+      <div class="col-md-6 mb-4">
+        <div class="card h-100 text-center shadow-sm">
+          <div class="card-body">
+            <img src="https://img.icons8.com/color/480/power-bi.png" alt="Power BI" width="60" class="mb-3"/>
+            <h4>Power BI</h4>
+            <p>Visualización interactiva de datos, KPI y filtros dinámicos.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 mb-4">
+        <div class="card h-100 text-center shadow-sm">
+          <div class="card-body">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Python" height="60" class="mb-3"/>
+            <h4>Python (EDA)</h4>
+            <p><strong>Librerías:</strong> <span class="badge bg-primary">Pandas</span> <span class="badge bg-primary">NumPy</span> 
+                <span class="badge bg-primary">Scikit-learn</span></p>
+            <p>Análisis exploratorio, limpieza y comprensión de datos.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<!-- Footer -->
+<footer class="footer-gradiente text-white pt-4 pb-2 mt-5">
+  <div class="container text-center text-md-start">
+    <div class="row">
+      <div class="col-md-6 mb-3">
+        <h5 class="fw-bold">Contacto:</h5>
+        <p>
+          <i class="bi bi-envelope me-2"></i> maxibal01@gmail.com <br/>
+          <i class="bi bi-linkedin me-2"></i> 
+          <a href="https://www.linkedin.com/in/maximiliano-baldoma/" class="footer-link" target="_blank">LinkedIn</a>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="text-center mt-3 border-top pt-3">
+    <small>© 2025 Maximiliano Baldomá · <a href="../../index.html" class="footer-link">Volver al inicio</a></small>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

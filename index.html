@@ -3,84 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio de Maximiliano Baldomá, analista de datos con experiencia en SQL, Power BI, Python y más.">
     <title>Portafolio de Maximiliano Baldomá</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap Icons -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
-    <!-- Estilos personalizados -->
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f8f9fa;
-        }
-        header {
-            background: #0073e6;
-            color: #fff;
-            padding: 60px 0;
-            text-align: center;
-        }
-        .navbar {
-            background: #0073e6 !important;
-        }
-        .navbar-brand, .nav-link {
-            color: #fff !important;
-        }
-        .section-title {
-            color: #0073e6;
-            margin-bottom: 30px;
-        }
-        .card {
-            margin-bottom: 20px;
-            border: none;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-        .card-body {
-            padding: 20px;
-        }
-        .btn-primary {
-            background-color: #0073e6;
-            border: none;
-        }
-        .btn-primary:hover {
-            background-color: #005bb5;
-        }
-    </style>
+    <!-- Estilos css -->
+    <link rel="stylesheet" href="styles.css">
+    
 </head>
 <body>
     <!-- Barra de navegación -->
-    <nav class="navbar navbar-expand-lg navbar-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-gradient-custom shadow-sm">
         <div class="container">
-            <a class="navbar-brand" href="#">Maximiliano Baldomá</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand fw-bold" href="index.html">MB</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#sobre-mi">Sobre mí</a>
+                        <a class="nav-link nav-hover" href="#sobre-mi">Sobre mí</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#proyectos">Proyectos</a>
+                        <a class="nav-link nav-hover" href="#proyectos">Proyectos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#experiencia">Experiencia</a>
+                        <a class="nav-link nav-hover" href="#experiencia">Experiencia</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contacto">Contacto</a>
+                        <a class="nav-link nav-hover" href="#contacto">Contacto</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
+
     <!-- Encabezado -->
-    <header>
+    <header class="py-5" style="background: linear-gradient(135deg, #17324e 0%, #5d685f 100%); color: rgb(200, 214, 207);">
         <div class="container">
-            <h1 class="display-4">Maximiliano Baldomá</h1>
-            <p class="lead">Analista de Datos | SQL | Power BI | Python  | Excel </p>
+            <div class="row align-items-center text-center text-md-start">
+                
+                <!-- Foto personal -->
+                <div class="col-md-3 mb-4 mb-md-0 text-center">
+                    <div class="rounded-circle shadow-lg overflow-hidden mx-auto" 
+                        style="width: 270px; height: 270px; border: 4px solid rgba(255,255,255,0.3);">
+                        <img src="../portafolio/proyectos/img/maxi.jpeg"
+                            alt="Foto de Maximiliano Baldomá"
+                            style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                </div>
+
+
+                <!-- Texto -->
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <h1 class="display-5 fw-bold mb-2">Maximiliano Baldomá</h1>
+                    <p class="lead fs-5 mb-3">Analista de Datos | SQL | Power BI | Python | Excel</p>
+                    <p class="mb-4">
+                        Especializado en transformación de datos y análisis estratégico para la toma de decisiones.
+                    </p>
+                    <a href="../portafolio/proyectos/docs/Analistadedatos_MaximilianoBaldoma.pdf"
+                    class="btn btn-outline-light btn-lg px-4 shadow" download>
+                        <i class="bi bi-download"></i> Descargar CV
+                    </a>
+                </div>
+
+                <!-- Video o Lottie -->
+                <div class="col-md-3">
+                    <video 
+                        src="../portafolio/proyectos/videos/barras.webm" 
+                        autoplay 
+                        muted 
+                        loop 
+                        playsinline 
+                        class="img-fluid rounded shadow-lg" 
+                        style="max-width: 250px;">
+                        Tu navegador no soporta la etiqueta de video.
+                    </video>
+                </div>
+
+            </div>
         </div>
     </header>
+
+
 
     <!-- Contenido principal -->
     <div class="container my-5">
@@ -88,30 +98,55 @@
         <section id="sobre-mi" class="mb-5">
             <h2 class="section-title">Sobre mí</h2>
             <p class="lead">
-                Hola! Soy Maximiliano Baldomá, un analista de datos con experiencia en metodologías ágiles como SCRUM. Me especializo en la recopilación, extracción, transformación y carga de datos (ETL), así como en la generación de reportes y visualización de datos. Soy proactivo, resolutivo y resiliente, con habilidades en Python, Power BI, SQL, NoSQL, AWS y Excel. Actualmente, estoy cursando estudios en Contador Público, lo cual complementa mi perfil con un enfoque estratégico y analítico para la toma de decisiones.
+                Hola! Soy Maximiliano Baldomá, analista de datos con experiencia en metodologías ágiles como SCRUM. 
+                Me especializo en procesos de ETL, análisis estratégico y visualización de datos. 
+                Manejo herramientas como Python, Power BI, SQL y Excel, y cuento con formación contable, 
+                lo que fortalece mi enfoque analítico para la toma de decisiones. 
+                Me definen la proactividad, la resiliencia y la orientación a resultados. 
             </p>
         </section>
-
+        
         <!-- Proyectos -->
         <section id="proyectos" class="mb-5">
             <h2 class="section-title">Proyectos Destacados</h2>
             <div class="row">
+
                 <!-- Proyecto 1 -->
-                <div class="col-md-6">
+                <div class="col-md-6 mb-4">
                     <div class="card">
                         <div class="card-body">
-                            <h3 class="card-title">Sistema de Recomendación de Películas</h3>
+                            <h3 class="card-title">Análisis de Donantes y Proveedores Fundación Potenciar Solidario</h3>
                             <p class="card-text">
-                                Implementación de un sistema de recomendación basado en Machine Learning para una start-up de streaming.
+                                Creación de un dashboard en Looker Studio para el análisis de proveedores y donantes, soportado por un proceso completo de ETL en Google Sheets.
                             </p>
-                            <p><strong>Tecnologías:</strong> Python, FastAPI, pandas, numpy, Render.</p>
-                            <p><strong>Resultados:</strong> Lanzamiento de recomendaciones precisas y personalizadas.</p>
-                            <a href="[enlace a tu proyecto]" class="btn btn-primary">Ver proyecto</a>
+                            <p><strong>Tecnologías:</strong> Looker Studio, Google Sheets, MySQL.</p>
+                            <p><strong>Resultados:</strong> Visualización interactiva y automatizada de métricas clave, logrando simplificar la toma de decisiones y la presentación a stakeholders.</p>
+                            <a href="proyectos/potenciarsolidario/index.html" class="btn btn-primary">Ver análisis completo</a>
+                        </div>
+                    </div>
+                </div>    
+
+                <!-- Proyecto 2 -->
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title">Análisis de Elecciones Presidenciales</h3>
+                            <p class="card-text">
+                                Análisis comparativo de resultados electorales (2015-2023) con visualización interactiva de patrones de votación, participación ciudadana y distribución geográfica.
+                            </p>
+                            <p><strong>Tecnologías:</strong> Python, SQL, Power BI.</p>
+                            <p><strong>Resultados:</strong> <br>
+                                - Identificación de patrones de votación por región y demografía<br>
+                                - Detección de tendencias históricas en participación electoral<br>
+                                - Dashboard interactivo con filtros por provincia
+                            </p>
+                            <a href="proyectos/elecciones/index.html" class="btn btn-primary mt-auto">Ver análisis completo</a>
                         </div>
                     </div>
                 </div>
-                <!-- Proyecto 2 -->
-                <div class="col-md-6">
+
+                <!-- Proyecto 3 -->
+                <div class="col-md-6 mb-4">
                     <div class="card">
                         <div class="card-body">
                             <h3 class="card-title">Análisis de Plataformas Educativas (MOOCs)</h3>
@@ -120,44 +155,29 @@
                             </p>
                             <p><strong>Tecnologías:</strong> Python, pandas, numpy, matplotlib, Power BI.</p>
                             <p><strong>Resultados:</strong> Información valiosa para estrategias educativas y mejora en la toma de decisiones.</p>
-                            <a href="[enlace a tu proyecto]" class="btn btn-primary">Ver proyecto</a>
+                            <a href="proyectos/moocs/index.html" class="btn btn-primary">Ver análisis completo</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Proyecto 4  -->
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">Sistema de Recomendación de Películas</h3>
+                            <p class="card-text">
+                                Implementación de un sistema de recomendación basado en Machine Learning para una start-up de streaming.
+                            </p>
+                            <p><strong>Tecnologías:</strong> Python, FastAPI, pandas, numpy, Render.</p>
+                            <p><strong>Resultados:</strong> Lanzamiento de recomendaciones precisas y personalizadas.</p>
+                            <a href="proyectos/alertasismica/index.html" class="btn btn-primary">Ver análisis completo</a>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- proyecto 3 -->
-            <div class="col-md-6">
-                <div class="card">
-                    <div class="card-body">
-                        <h3 class="card-title">Análisis de Donantes y Proveedores Fundación Potenciar Solidario</h3>
-                        <p class="card-text">
-                            Creación de un dashboard en Looker Studio para el análisis de proveedores y donantes, soportado por un proceso completo de ETL en Google Sheets.
-                        </p>
-                        <p><strong>Tecnologías:</strong> Looker Studio, Google Sheets.</p>
-                        <p><strong>Resultados:</strong> Implementación exitosa de notificaciones de alertas en menos de 5 segundos.</p>
-                        <a href="[enlace a tu proyecto]" class="btn btn-primary">Ver proyecto</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- proyecto 4 -->
-        <div class="col-md-6">
-            <div class="card">
-                <div class="card-body">
-                    <h3 class="card-title">Sistema de Alertas Sísmicas</h3>
-                    <p class="card-text">
-                        Desarrollo de un sistema de alertas sísmicas con web scraping y notificaciones en tiempo real.
-                    </p>
-                    <p><strong>Tecnologías:</strong> Python, BeautifulSoup, AWS, Telegram, Streamlit.</p>
-                    <p><strong>Resultados:</strong> Visualización interactiva y automatizada de métricas clave, logrando simplificar la toma de decisiones y la presentación a stakeholders.</p>
-                    <a href="[enlace a tu proyecto]" class="btn btn-primary">Ver proyecto</a>
-                </div>
-            </div>
-        </div>
-    </div>
-            <!-- Agrega más proyectos aquí -->
         </section>
+
 
         <!-- Experiencia -->
         <section id="experiencia" class="mb-5">
@@ -167,24 +187,63 @@
                     <h3 class="card-title">Mentor de Enseñanza de Data Science en Henry</h3>
                     <p><strong>Período:</strong> junio 2023 - agosto 2023</p>
                     <p>
-                        Coordinación de grupos de estudiantes y asistencia en sus proyectos. Propuesta de mejoras en el Bootcamp.
+                        - Coordinación de grupos de estudiantes y asistencia en sus proyectos. Propuesta de mejoras en el Bootcamp.
                     </p>
-                    <p><strong>Resultados:</strong> Alta satisfacción estudiantil.</p>
+                    <p><strong>Resultados:</strong> Alta satisfacción estudiantil, resolución de problemas con respecto a inquietudes de los estudiantes.</p>
                 </div>
             </div>
         </section>
 
         <!-- Contacto -->
-        <section id="contacto" class="mb-5">
-            <h2 class="section-title">Contacto</h2>
-            <p>
-                Puedes contactarme en: <a href="mailto:maxibal01@gmail.com">maxibal01@gmail.com</a>.
-            </p>
-            <p>
-                LinkedIn: <a href="https://www.linkedin.com/in/maximiliano-baldoma/">Maximiliano Baldomá</a> | GitHub: <a href="https://github.com/Maxibaldoma">maxibal01</a>
-            </p>
+        <section id="contacto" class="container mt-5">
+            <h2 class="section-title text-center">Contacto</h2>
+            <p class="text-center">¿Tienes alguna consulta? Contáctame.</p>
+            <div class="text-center">
+                <a href="mailto:maxibal01@gmail.com" class="btn btn-primary"><i class="bi bi-envelope"></i> Enviar Email</a>
+                <a href="https://www.linkedin.com/in/maximiliano-baldoma/" class="btn btn-primary"><i class="bi bi-linkedin"></i> LinkedIn</a>
+            </div>
         </section>
     </div>
+
+<!-- Footer -->
+<footer class="footer-gradiente text-white pt-4 pb-2 mt-5">
+    <div class="container text-center text-md-start">
+        <div class="row">
+            <!-- Sobre mí -->
+            <div class="col-md-4 mb-3">
+                <h5 class="text-uppercase fw-bold">Sobre mí</h5>
+                <p>Soy analista de datos con experiencia en visualización, ETL y automatización. Apasionado por los datos y el aprendizaje continuo.</p>
+            </div>
+
+            <!-- Navegación -->
+            <div class="col-md-4 mb-3">
+                <h5 class="text-uppercase fw-bold">Navegación</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#sobre-mi" class="footer-link">Sobre mí</a></li>
+                    <li><a href="#proyectos" class="footer-link">Proyectos</a></li>
+                    <li><a href="#experiencia" class="footer-link">Experiencia</a></li>
+                </ul>
+            </div>
+
+            <!-- Contacto -->
+            <div class="col-md-4 mb-3">
+                <h5 class="text-uppercase fw-bold">Contacto</h5>
+                <p><i class="bi bi-envelope me-2"></i>maxibal01@gmail.com</p>
+                <p><i class="bi bi-linkedin me-2"></i>
+                    <a href="https://www.linkedin.com/in/maximiliano-baldoma/" class="footer-link">LinkedIn</a>
+                </p>
+                <p><i class="bi bi-github" ></i>
+                    <a href="https://github.com/maxibaldoma" class="footer-link">GitHub</a>
+                </p>
+                
+            </div>
+        </div>
+    </div>
+    <div class="text-center mt-3 border-top pt-3">
+        <small>&copy; 2025 Maximiliano Baldomá | Analista de Datos. Todos los derechos reservados.</small>
+    </div>
+</footer>
+
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>

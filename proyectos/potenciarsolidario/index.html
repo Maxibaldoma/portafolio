@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Potenciar Solidario - Maximiliano Baldomá</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Estilos css -->
+    <link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-gradient-custom shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="../../index.html">MB</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobre-proyecto">Sobre el Proyecto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#dashboard">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#insights">Insights</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tecnologias">Tecnologías</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Encabezado -->
+    <header class="py-5 text-white" style="background: linear-gradient(135deg, #17324e, #5d685f);">
+        <div class="container text-center">
+            <h1 class="display-4">Fundación Potenciar Solidario</h1>
+            <p class="lead">Análisis de ingresos (donantes) y egresos (proveedores) con dashboard interactivo.</p>
+        </div>
+    </header>
+
+    <div class="container my-5">
+        <!-- Sobre el Proyecto -->
+        <section id="sobre-proyecto" class="mb-5">
+            <h2 class="section-title"><i class="bi bi-journal-text me-2"></i>Sobre el Proyecto</h2>
+            <p class="lead">
+                Análisis financiero para la Fundación Potenciar Solidario, enfocado en visualizar el flujo de donaciones (ingresos) y gastos operativos (egresos). 
+                El dashboard permite identificar patrones, optimizar recursos y mejorar la transparencia en la gestión.
+            </p>
+        </section>
+
+        <!-- Dashboard -->
+        <section id="dashboard" class="mb-5">
+            <h2 h2 class="section-title"><i class="bi bi-bar-chart-line me-2"> </i> Dashboard Interactivo</h2>
+            <div class="row">
+                <div class="col-12 mb-4">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://lookerstudio.google.com/reporting/35f3af95-ed2c-44a6-97d0-92ca5bb769ef/page/p_m1gsnx8jnd" 
+                                frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+                    <div class="text-center mt-3">
+                        <a href="https://lookerstudio.google.com/reporting/35f3af95-ed2c-44a6-97d0-92ca5bb769ef/page/p_ir0evfwvmd" 
+                           class="btn btn-primary" target="_blank">
+                           <i class="bi bi-box-arrow-up-right"></i> Abrir en nueva pestaña
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Insights -->
+        <section id="insights" class="mb-5">
+            <h2  class="bi bi-graph-up" class="section-title" > Principales Insights</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title text-primary">Análisis de Donantes</h3>
+                            <ul>
+                                <li>Identificación de los 10 donantes más influyentes</li>
+                                <li>Tendencias estacionales en las donaciones</li>
+                                <li>Segmentación por tipo de donante </li>
+                                <li>Predicción de donaciones futuras basada en datos históricos</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title text-primary">Análisis de Proveedores</h3>
+                            <ul>
+                                <li>Identificación de los 10 proveedores principales</li>
+                                <li>Tendencia temporal y Ubicación de los proveedores</li>
+                                <li>Análisis de variación mensual de egresos</li>
+                                <li>Detección de oportunidades de optimización</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title text-primary">Comparación Ingresos vs. Egresos</h3>
+                            <ul>
+                                <li>Balance anual entre donaciones recibidas y gastos</li>
+                                <li>Proyección de sostenibilidad financiera a lo largo del tiempo</li>
+                                <li>Comportamiento de la Utilidad.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tecnologías utilizadas -->
+        <section id="tecnologias" class="mb-5">
+            <h2 class="section-title"><i class="bi bi-tools me-2"></i>Tecnologías Utilizadas</h2>
+            <div class="row">
+                <!-- Looker Studio -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <img src="https://img.icons8.com/color/480/google-data-studio.png" 
+                                alt="Looker Studio Logo" 
+                                style="height:60px; margin-bottom:15px;">
+                            <h3>Looker Studio</h3>
+                            <p>Dashboard interactivo con filtros dinámicos</p>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Google Sheets -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <img src="https://img.icons8.com/color/480/google-sheets.png" 
+                                 alt="Google Sheets Logo" 
+                                style="height:60px; margin-bottom:15px;">
+                            <h3>Google Sheets</h3>
+                            <p>ETL con scripts personalizados</p>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- MySQL -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" 
+                                 alt="MySQL" 
+                                 style="height: 60px; width: auto; margin-bottom: 15px;">
+                            <h3>MySQL</h3>
+                            <p>Almacenamiento estructurado de datos</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contacto -->
+        <section id="contacto" class="mt-5 py-4">
+            <div class="container">
+                <h2 class="section-title text-center mb-3">¿Interesado en este proyecto?</h2>
+                <p class="text-center mb-4">Contáctame para más detalles o consultas</p>
+                <div class="text-center">
+                    <a href="mailto:maxibal01@gmail.com" class="btn btn-primary mx-2"><i class="bi bi-envelope"></i> Email</a>
+                    <a href="https://www.linkedin.com/in/maximiliano-baldoma/" class="btn btn-primary mx-2"><i class="bi bi-linkedin"></i> LinkedIn</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer-gradiente text-white pt-4 pb-2 mt-5">
+        <div class="container text-center text-md-start">
+            <div class="row">
+            <div class="col-md-6 mb-3">
+                <h5 class="fw-bold">Contacto:</h5>
+                <p>
+                <i class="bi bi-envelope me-2"></i> maxibal01@gmail.com <br/>
+                <i class="bi bi-linkedin me-2"></i> 
+                <a href="https://www.linkedin.com/in/maximiliano-baldoma/" class="footer-link" target="_blank">LinkedIn</a>
+                </p>
+            </div>
+            </div>
+        </div>
+        <div class="text-center mt-3 border-top pt-3">
+            <small>© 2025 Maximiliano Baldomá · <a href="../../index.html" class="footer-link">Volver al inicio</a></small>
+        </div>
+    </footer>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
