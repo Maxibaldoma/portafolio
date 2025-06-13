@@ -45,6 +45,7 @@ Además del conocimiento, valoro el compromiso, el aprendizaje constante y la hu
 
 - 📧 baldoma.maxi@gmail.com
 - 💼 [LinkedIn](https://www.linkedin.com/in/maximiliano-baldoma/)
+- 🌐 [Mi sitio web en GitHub Pages](https://maxibaldoma.github.io/portafolio/) 
 
 
 ---
