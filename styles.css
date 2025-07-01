@@ -253,3 +253,21 @@ footer i {
         text-align: center;
     }
 }
+
+
+/* Color LinkedIn al pasar el mouse */
+.btn-linkedin:hover {
+  background-color: #0A66C2 !important; /* Azul LinkedIn */
+  border-color: #0A66C2 !important;
+}
+
+
+/* Efecto hover LinkedIn */
+.btn-linkedin:hover {
+  background-color: #0A66C2 !important;
+  border-color: #0A66C2 !important;
+}
+
+.btn-linkedin {
+  transition: background-color 0.3s, border-color 0.3s;
+}
